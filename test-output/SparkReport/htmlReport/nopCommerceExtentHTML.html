@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">nopCommerce Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 19, 2023 03:21:54 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 19, 2023 04:04:20 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 19, 2023 03:21:54 PM</h3>
+<h3>May 19, 2023 04:04:20 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 19, 2023 03:22:25 PM</h3>
+<h3>May 19, 2023 04:04:50 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature":12.902,"Registration page feature":29.886
+"Registration page feature":29.635,"Login page feature":12.466
 };
 </script>
 <div class="row">
@@ -261,9 +261,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login page feature</p>
+            <p class="name">Registration page feature</p>
             <p class="text-sm">
-              <span>3:21:55 PM</span> / <span>00:00:12:902</span>
+              <span>4:04:21 PM</span> / <span>00:00:29:635</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -271,10 +271,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>05.19.2023 3:21:55 PM</span>
-<span class='badge badge-danger'>05.19.2023 3:22:08 PM</span>
-<span class='badge badge-default'>00:00:12:902</span>
+<h5 class="test-status text-pass">Registration page feature</h5>
+<span class='badge badge-success'>05.19.2023 4:04:21 PM</span>
+<span class='badge badge-danger'>05.19.2023 4:04:50 PM</span>
+<span class='badge badge-default'>00:00:29:635</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -286,43 +286,63 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Unable to register without first name field</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
-                <span>When user enters username "latexaid@gmail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
-                <span>And user enters password "123456"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
-                <span>And user clicks on Login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_click_on_my_account_page()">
-                <span>And user click on my account page</span>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_is_on_registration_page()">
+                <span>Given user is on registration page</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_title_of_the_page()">
-                <span>When user gets the title of the page</span>
+                <span>Given user gets the title of the page</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "Your store. Account"</span>
+                <span>When page title should be "Your store. Register"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_last_name(java.lang.String)">
+                <span>Then user enters last name "Mike"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_email_as(java.lang.String)">
+                <span>* user enters email as "john.mike@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_phone_number(java.lang.String)">
+                <span>* user enters phone number "017468484948"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_fax_number(java.lang.String)">
+                <span>* user enters fax number "8802385857"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_password_for_registration_page(java.lang.String)">
+                <span>* user enters password for registration page "123456"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_confirm_password_for_registration_page(java.lang.String)">
+                <span>* user enters confirm password for registration page "123456"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_click_on_registration_button()">
+                <span>* user click on registration button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_see_error_message(java.lang.String)">
+                <span>* user see error message "First name is required."</span>
       <div>
       </div>
               </div>
@@ -332,212 +352,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Login with incorrect credentials</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
-                <span>When user enters username "noname@gmail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
-                <span>And user enters password "123456123"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
-                <span>And user clicks on Login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message(java.lang.String)">
-                <span>Then user should see error message "Login was unsuccessful. Please correct the errors and try again.No customer account found"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Login with valid Username and invalid password</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
-                <span>When user enters username "latexaid@gmail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
-                <span>And user enters password "1234567"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
-                <span>And user clicks on Login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message(java.lang.String)">
-                <span>Then user should see error message "Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Login without giving any credentials</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
-                <span>When user enters username ""</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
-                <span>And user enters password ""</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
-                <span>And user clicks on Login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message_as(java.lang.String)">
-                <span>Then user should see error message as "Please enter your email"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Login with wrong email in Email field</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
-                <span>When user enters username "hello@gmail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
-                <span>And user enters password "1234567"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
-                <span>And user clicks on Login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message(java.lang.String)">
-                <span>Then user should see error message "Login was unsuccessful. Please correct the errors and try again.No customer account found"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Navigate to login page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_home_page()">
-                <span>Given user is on home page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_click_on_my_login_page()">
-                <span>When user click on my login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_title_of_the_page()">
-                <span>And user gets the title of the page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "Your store. Login"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Registration page feature</p>
-            <p class="text-sm">
-              <span>3:21:55 PM</span> / <span>00:00:29:886</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Registration page feature</h5>
-<span class='badge badge-success'>05.19.2023 3:21:55 PM</span>
-<span class='badge badge-danger'>05.19.2023 3:22:25 PM</span>
-<span class='badge badge-default'>00:00:29:886</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Unable to register without last name field</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Unable to register without last name field</div>
       </div>
     </div>
         <div class="collapse">
@@ -669,73 +484,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Unable to register without first name field</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_is_on_registration_page()">
-                <span>Given user is on registration page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_title_of_the_page()">
-                <span>Given user gets the title of the page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
-                <span>When page title should be "Your store. Register"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_last_name(java.lang.String)">
-                <span>Then user enters last name "Mike"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_email_as(java.lang.String)">
-                <span>* user enters email as "john.mike@gmail.com"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_phone_number(java.lang.String)">
-                <span>* user enters phone number "017468484948"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_fax_number(java.lang.String)">
-                <span>* user enters fax number "8802385857"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_password_for_registration_page(java.lang.String)">
-                <span>* user enters password for registration page "123456"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_enters_confirm_password_for_registration_page(java.lang.String)">
-                <span>* user enters confirm password for registration page "123456"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_click_on_registration_button()">
-                <span>* user click on registration button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.RegistrationPageSteps.user_see_error_message(java.lang.String)">
-                <span>* user see error message "First name is required."</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Navigate to registration page</div>
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Navigate to registration page</div>
       </div>
     </div>
         <div class="collapse">
@@ -771,7 +520,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Unable to register without password field</div>
+        <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Unable to register without password field</div>
       </div>
     </div>
         <div class="collapse">
@@ -903,7 +652,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>Unable to register while giving mismatch password</div>
+        <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>Unable to register while giving mismatch password</div>
       </div>
     </div>
         <div class="collapse">
@@ -974,7 +723,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Unable to register giving wrong email</div>
+        <div class="node" id="117"><span class="badge log pass-bg mr-2">Pass</span>Unable to register giving wrong email</div>
       </div>
     </div>
         <div class="collapse">
@@ -1040,7 +789,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Unable to register giving less password length</div>
+        <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Unable to register giving less password length</div>
       </div>
     </div>
         <div class="collapse">
@@ -1106,7 +855,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>Register with valid credentials</div>
+        <div class="node" id="123"><span class="badge log pass-bg mr-2">Pass</span>Register with valid credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -1248,6 +997,257 @@ eventsCount: 5,
 </div>
           </div>
         </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login page feature</p>
+            <p class="text-sm">
+              <span>4:04:21 PM</span> / <span>00:00:12:466</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login page feature</h5>
+<span class='badge badge-success'>05.19.2023 4:04:21 PM</span>
+<span class='badge badge-danger'>05.19.2023 4:04:33 PM</span>
+<span class='badge badge-default'>00:00:12:466</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Login with incorrect credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
+                <span>When user enters username "noname@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
+                <span>And user enters password "123456123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
+                <span>And user clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message(java.lang.String)">
+                <span>Then user should see error message "Login was unsuccessful. Please correct the errors and try again.No customer account found"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Navigate to login page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_home_page()">
+                <span>Given user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_click_on_my_login_page()">
+                <span>When user click on my login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_title_of_the_page()">
+                <span>And user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Your store. Login"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Login with wrong email in Email field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
+                <span>When user enters username "hello@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
+                <span>And user enters password "1234567"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
+                <span>And user clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message(java.lang.String)">
+                <span>Then user should see error message "Login was unsuccessful. Please correct the errors and try again.No customer account found"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Login with valid Username and invalid password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
+                <span>When user enters username "latexaid@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
+                <span>And user enters password "1234567"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
+                <span>And user clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message(java.lang.String)">
+                <span>Then user should see error message "Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
+                <span>When user enters username "latexaid@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
+                <span>And user enters password "123456"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
+                <span>And user clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_click_on_my_account_page()">
+                <span>And user click on my account page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Your store. Account"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Login without giving any credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_username(java.lang.String)">
+                <span>When user enters username ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_enters_password(java.lang.String)">
+                <span>And user enters password ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
+                <span>And user clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_should_see_error_message_as(java.lang.String)">
+                <span>Then user should see error message as "Please enter your email"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -1289,79 +1289,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
+<td>16:04:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login with correct credentials</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login with correct credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Login with incorrect credentials</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login with incorrect credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='4'>Login with valid Username and invalid password</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login with valid Username and invalid password</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='5'>Login without giving any credentials</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login without giving any credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='6' id='7'>Unable to register without last name field</a>
-<div class="">
-<span class="badge badge-default">Registration page feature.Unable to register without last name field</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='8'>Login with wrong email in Email field</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login with wrong email in Email field</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='6' id='10'>Unable to register without email field</a>
-<div class="">
-<span class="badge badge-default">Registration page feature.Unable to register without email field</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='6' id='11'>Unable to register without first name field</a>
+<a href="#" class="linked" test-id='1' id='2'>Unable to register without first name field</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Unable to register without first name field</span>
 </div>
@@ -1369,19 +1299,19 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
+<td>16:04:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='12'>Navigate to registration page</a>
+<a href="#" class="linked" test-id='3' id='4'>Login with incorrect credentials</a>
 <div class="">
-<span class="badge badge-default">Registration page feature.Navigate to registration page</span>
+<span class="badge badge-default">Login page feature.Login with incorrect credentials</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:21:55 PM</td>
+<td>16:04:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='17'>Navigate to login page</a>
+<a href="#" class="linked" test-id='3' id='5'>Navigate to login page</a>
 <div class="">
 <span class="badge badge-default">Login page feature.Navigate to login page</span>
 </div>
@@ -1389,9 +1319,79 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:07 PM</td>
+<td>16:04:21 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='107'>Unable to register without password field</a>
+<a href="#" class="linked" test-id='3' id='6'>Login with wrong email in Email field</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with wrong email in Email field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='7'>Login with valid Username and invalid password</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with valid Username and invalid password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Unable to register without last name field</a>
+<div class="">
+<span class="badge badge-default">Registration page feature.Unable to register without last name field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='9'>Login with correct credentials</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with correct credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Unable to register without email field</a>
+<div class="">
+<span class="badge badge-default">Registration page feature.Unable to register without email field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Navigate to registration page</a>
+<div class="">
+<span class="badge badge-default">Registration page feature.Navigate to registration page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='19'>Login without giving any credentials</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login without giving any credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:04:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='101'>Unable to register without password field</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Unable to register without password field</span>
 </div>
@@ -1399,9 +1399,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:07 PM</td>
+<td>16:04:32 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='110'>Unable to register without confirm password field</a>
+<a href="#" class="linked" test-id='1' id='110'>Unable to register without confirm password field</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Unable to register without confirm password field</span>
 </div>
@@ -1409,9 +1409,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:07 PM</td>
+<td>16:04:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='113'>Unable to register while giving mismatch password</a>
+<a href="#" class="linked" test-id='1' id='114'>Unable to register while giving mismatch password</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Unable to register while giving mismatch password</span>
 </div>
@@ -1419,9 +1419,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:07 PM</td>
+<td>16:04:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='116'>Unable to register giving wrong email</a>
+<a href="#" class="linked" test-id='1' id='117'>Unable to register giving wrong email</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Unable to register giving wrong email</span>
 </div>
@@ -1429,9 +1429,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:07 PM</td>
+<td>16:04:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='119'>Unable to register giving less password length</a>
+<a href="#" class="linked" test-id='1' id='120'>Unable to register giving less password length</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Unable to register giving less password length</span>
 </div>
@@ -1439,9 +1439,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:07 PM</td>
+<td>16:04:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='122'>Register with valid credentials</a>
+<a href="#" class="linked" test-id='1' id='123'>Register with valid credentials</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Register with valid credentials</span>
 </div>
@@ -1449,9 +1449,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:22:08 PM</td>
+<td>16:04:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='6' id='128'>Register with existing credentials</a>
+<a href="#" class="linked" test-id='1' id='128'>Register with existing credentials</a>
 <div class="">
 <span class="badge badge-default">Registration page feature.Register with existing credentials</span>
 </div>
